@@ -543,6 +543,7 @@ html{
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
+    border-radius: 15px;
 }
 
 .portfolio .galeria .proyecto .overlay{
@@ -559,6 +560,7 @@ html{
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
+    border-radius: 15px;
 }
 
 .portfolio .galeria .proyecto .overlay h3{
@@ -741,6 +743,10 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+
+    .inicio{
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:700px){
@@ -750,6 +756,23 @@ footer .arriba{
 
     .sobremi .fila .col{
         width: fit-content;
+        display: contents;
+    }
+
+    .sobremi .fila .col ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .sobremi .fila .col ul li strong {
+        width: 126px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        justify-content: center;
     }
 
     .skills .fila{
@@ -785,15 +808,39 @@ footer .arriba{
         max-width: 100%;
     }
 
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-
     .contacto .fila{
         display: block;
     }
 
     .contacto .fila .col{
         width: 100%;
+    }
+
+    .contacto .col .info{
+        top: 50%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .sobremi .fila .col ul #tamaño1 > strong{
+        width: 150px;
+    }
+
+    .sobremi .fila .col ul #tamaño-email > strong{
+        width: 90px;
+    }
+
+    .sobremi .fila .col ul #tamaño2 > strong{
+        width: 103px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .sobremi .fila .col ul #tamaño-email > strong{
+        width: 70px;
+    }
+
+    .sobremi .fila .col ul #tamaño2 > strong{
+        width: 88px;
     }
 }
