@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="Imagenes/logo-icono.ico"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -286,8 +291,8 @@
                 <p>
                   Desarrollé y diseñé mi propio sitio web personal utilizando
                   HTML, CSS y JavaScript. El sitio web incluye información sobre
-                  mí, mis habilidades, mi curriculum, mi portafolio y una sección de contacto.
-                  Me encargué de crear un diseño atractivo
+                  mí, mis habilidades, mi curriculum, mi portafolio y una
+                  sección de contacto. Me encargué de crear un diseño atractivo
                   y responsivo, optimizando la experiencia del usuario. Utilicé
                   CSS para estilizar la página y JavaScript para agregar
                   interactividad y funcionalidad. El proyecto me permitió
@@ -352,9 +357,12 @@
           <h2>PORTFOLIO</h2>
           <div class="galeria">
             <div class="proyecto">
-              <a href="https://thejose24.github.io/Challenge-ONE/" target="_blank">
+              <a
+                href="https://thejose24.github.io/Challenge-ONE/"
+                target="_blank"
+              >
                 <img
-                  src="Imagenes/Captura de pantalla 2023-06-22 084410.png"
+                  src="Imagenes/Proyecto1.png"
                   alt=""
                 />
                 <div class="overlay">
@@ -386,21 +394,30 @@
           <div class="fila">
             <!--Formulario-->
             <div class="col">
-              <input type="text" placeholder="Tu Nombre" />
-              <input type="text" placeholder="Numero Telefono" />
-              <input type="text" placeholder="Direccion de correo" />
-              <input type="text" placeholder="Tema" />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Mensaje"
-              ></textarea>
-              <button>
-                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                <span class="overlay"></span>
-              </button>
+              <form name="formulario-contacto" netlify>
+                <input type="text" name="nombre" placeholder="Tu Nombre" />
+                <input
+                  type="number"
+                  name="Telefono"
+                  placeholder="Numero Telefono"
+                />
+                <input
+                  type="email"
+                  name="correo"
+                  placeholder="Direccion de correo"
+                />
+                <input type="text" name="tema" placeholder="Tema" />
+                <textarea
+                  name="asunto"
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensaje"
+                ></textarea>
+                <button type="submit">
+                  Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                  <span class="overlay"></span>
+                </button>
+              </form>
             </div>
             <!--Mapa-->
             <div class="col">

@@ -610,6 +610,12 @@ html{
     position: relative;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Safari y Chrome */
+  margin: 0; /* Opcional: eliminar el espacio extra */
+}
+
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
