@@ -9,29 +9,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Encabezado-->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="Imagenes/logito.png" alt=""></a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-    <!--SECCION INICIO-->
+    <!--ENCABEZADO-->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="Imagenes/logito.png" alt=""></a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+    
+    <!--CONTENIDO-->
+    <main>
+        <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
@@ -98,6 +100,10 @@
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
                             <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microphone"></i>
+                            <span>CANTAR</span>
                         </div>
                         <div class="interes">
                             <i class="fa-brands fa-windows"></i>
@@ -265,18 +271,22 @@
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="Imagenes/Captura de pantalla 2023-06-22 084410.png" alt="">
-                    <div class="overlay">
-                        <h3>Challenge Oracle Next Education</h3>
-                        <p>Encriptador de Textos</p>
+                    <a href="https://thejose24.github.io/Challenge-ONE/">
+                        <img src="Imagenes/Captura de pantalla 2023-06-22 084410.png" alt="">
+                        <div class="overlay">
+                            <h3>Challenge Oracle Next Education</h3>
+                            <p>Encriptador de Textos</p>
                     </div>
+                    </a>
                 </div>
                 <div class="proyecto">
-                    <img src="Imagenes/Proyecto2.png" alt="">
-                    <div class="overlay">
-                        <h3>Personal Proyect</h3>
-                        <p>Rastreador de tamaño de ventana y contenido</p>
-                    </div>
+                    <a href="https://thejose24.github.io/Browser-Window-Size/"      target="_blank">
+                        <img src="Imagenes/Proyecto2.png" alt="">
+                        <div class="overlay">
+                            <h3>Personal Proyect</h3>
+                            <p>Rastreador de tamaño de ventana y contenido</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -322,17 +332,18 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!--FOOTER-->
     <footer>
         <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
+            <i class="fa-solid fa-angles-up fa-bounce"></i>
         </a>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/jose-sanchez-eisi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/TheJose24" target="_blank"><i class="fa-brands fa-git"></i></a>
-            <a href="https://www.hackerrank.com/josesitosanchez1?hr_r=1" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
-            <a href="https://www.facebook.com/joseenrique.sanchezravello.9" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <div class="herramientas">
+            <p>ESTE SITIO ESTA DESARROLLADO CON:</p>
+            <a href="#"><i class="fa-brands fa-html5" style="color: #E34F26;"></i></a>
+            <a href="#"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-js" style="color: #f7df1e;"></i></a>
         </div>
     </footer>
 

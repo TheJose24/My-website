@@ -64,7 +64,7 @@ html{
 /*SECCION INICIO*/
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(Imagenes/fondo.jpg);
+    url(Imagenes/fondo-inicio.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -540,6 +540,10 @@ html{
     cursor: pointer;
 }
 
+.portfolio .galeria .proyecto a{
+    color: #fff;
+}
+
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
@@ -687,18 +691,16 @@ footer .redes{
     margin-top: 20px;
 }
 
-footer .redes a{
-    color: #fff;
+footer .herramientas a{
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
     border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    margin: 20px 5px;
+    font-size: 30px;
 }
 
 footer .arriba{
