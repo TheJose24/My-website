@@ -1,352 +1,451 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Mi portafolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--ENCABEZADO-->
-        <div class="contenedor-header">
-            <header>
-                <div class="logo">
-                    <a href="index.html"><img src="Imagenes/logito.png" alt=""></a>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                    </ul>
-                </nav>
-                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </header>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="Imagenes/logito.png" alt="" /></a>
         </div>
-    
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
     <!--CONTENIDO-->
     <main>
-        <!--SECCION INICIO-->
-    <section id="inicio" class="inicio">
+      <!--SECCION INICIO-->
+      <section id="inicio" class="inicio">
         <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="Imagenes/foto-principal2.png" alt="">
-            </div>
-            <h1>JOSE SANCHEZ</h1>
-            <h2>Ingeniero de Sistemas - Full Stack</h2>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/jose-sanchez-eisi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/TheJose24" target="_blank"><i class="fa-brands fa-git"></i></a>
-                <a href="https://www.hackerrank.com/josesitosanchez1?hr_r=1" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
-                <a href="https://www.facebook.com/joseenrique.sanchezravello.9" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
+          <div class="contenedor-img">
+            <img src="Imagenes/foto-principal2.png" alt="" />
+          </div>
+          <h1>JOSE SANCHEZ</h1>
+          <h2>Ingeniero de Sistemas - Full Stack</h2>
+          <div class="redes">
+            <a
+              href="https://www.linkedin.com/in/jose-sanchez-eisi/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/TheJose24" target="_blank"
+              ><i class="fa-brands fa-git"></i
+            ></a>
+            <a
+              href="https://www.hackerrank.com/josesitosanchez1?hr_r=1"
+              target="_blank"
+              ><i class="fa-brands fa-hackerrank"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/joseenrique.sanchezravello.9"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!--SECCION SOBRE MI-->
-    <section id="sobremi" class="sobremi">
+      <!--SECCION SOBRE MI-->
+      <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, Soy Jose Sanchez.</span> Estudiante de Ingeniería de Sistemas apasionado por el mundo de la tecnología y el desarrollo de software. Tengo el privilegio de ser becario del programa de Oracle: ONE, lo que me permitirá profundizar mis conocimientos en desarrollo de software.</p>
+          <h2>Sobre Mi</h2>
+          <p>
+            <span>Hola, Soy Jose Sanchez.</span> Estudiante de Ingeniería de
+            Sistemas apasionado por el mundo de la tecnología y el desarrollo de
+            software. Tengo el privilegio de ser becario del programa de Oracle:
+            ONE, lo que me permitirá profundizar mis conocimientos en desarrollo
+            de software.
+          </p>
 
-            <div class="fila">
-                <!--datos personales-->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li id="tamaño1"1>
-                            <strong>Cumpleaños</strong>
-                            24-04-2002
-                        </li>
-                        <li id="tamaño1">
-                            <strong>Telefono</strong>
-                            +51 950 532 495
-                        </li>
-                        <li id="tamaño-email">
-                            <strong>Email</strong>
-                            joseenrique123438@gmail.com
-                        </li>
-                        <li id="tamaño2">
-                            <strong>Direccion</strong>
-                            131 Montero Rosas, Comas
-                        </li>
-                        <li id="tamaño2">
-                            <strong>Perfil</strong>
-                            <span>ESTUDIANTE</span>
-                            <span>FREELANCER</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--intereses-->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-microphone"></i>
-                            <span>CANTAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-windows"></i>
-                            <span>WINDOWS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>DEPORTE</span>
-                        </div>                        
-                    </div>                    
-                </div>
+          <div class="fila">
+            <!--datos personales-->
+            <div class="col">
+              <h3>Datos Personales</h3>
+              <ul>
+                <li id="tamaño1" 1>
+                  <strong>Cumpleaños</strong>
+                  24-04-2002
+                </li>
+                <li id="tamaño1">
+                  <strong>Telefono</strong>
+                  +51 950 532 495
+                </li>
+                <li id="tamaño-email">
+                  <strong>Email</strong>
+                  joseenrique123438@gmail.com
+                </li>
+                <li id="tamaño2">
+                  <strong>Direccion</strong>
+                  131 Montero Rosas, Comas
+                </li>
+                <li id="tamaño2">
+                  <strong>Perfil</strong>
+                  <span>ESTUDIANTE</span>
+                  <span>FREELANCER</span>
+                </li>
+              </ul>
             </div>
-            <button>
-                DESCARGAR CV <i class="fa-solid fa-download"></i>
+
+            <!--intereses-->
+            <div class="col">
+              <h3>Intereses</h3>
+              <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>JUEGOS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>MUSICA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>VIAJAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>CANTAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-windows"></i>
+                  <span>WINDOWS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-futbol"></i>
+                  <span>DEPORTE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>
+            DESCARGAR CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+      </section>
+
+      <!--SECCION SKILLS-->
+      <section id="skills" class="skills">
+        <div class="contenido-seccion">
+          <h2>Skills</h2>
+          <div class="fila">
+            <!--Technical Skills-->
+            <div class="col">
+              <h3>Technical Skills</h3>
+              <div class="skill">
+                <span>JavaScript</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>65%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>HTML5 & CSS3</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>87%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Java</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>53%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Git & GitHub</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>83%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Professional Skills-->
+            <div class="col">
+              <h3>Professional Skills</h3>
+              <div class="skill">
+                <span>Comunicacion</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Trabajo en Equipo</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>90%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Creatividad</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>97%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Dedicacion</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>88%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION CURRICULUM-->
+      <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+          <h2>Curriculum</h2>
+          <div class="fila">
+            <div class="col izquierda">
+              <h3>Educacion</h3>
+              <div class="item izq">
+                <h4>Programador Junior</h4>
+                <span class="casa">Oracle Next Education</span>
+                <span class="fecha">2023 - Actualidad</span>
+                <p>
+                  Oracle Next Education (ONE) es un programa educativo de Oracle
+                  que ofrece becas de formación en tecnología en América Latina.
+                  A través de ONE, adquirí habilidades en programación,
+                  incluyendo Java, bases de datos e inteligencia artificial.
+                  Esta experiencia me permitió desarrollar una base sólida en
+                  tecnología y estar preparado para los desafíos del mundo
+                  digital en constante evolución
+                </p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Ingenieria de Sistemas e Informatica</h4>
+                <span class="casa">Universidad Tecnologica del Peru</span>
+                <span class="fecha">2022 - Actualidad</span>
+                <p>
+                  Durante mi carrera universitaria, he adquirido sólidos
+                  conocimientos en áreas fundamentales de la tecnología. Mi
+                  formación incluye cursos especializados en programación,
+                  desarrollo de software, desarrollo web, desarrolo movil, bases
+                  de datos, redes y seguridad informática. Además, he tenido la
+                  oportunidad de participar en proyectos prácticos que me han
+                  permitido aplicar mis conocimientos y desarrollar habilidades
+                  en resolución de problemas, trabajo en equipo y análisis de
+                  sistemas.
+                </p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col derecha">
+              <h3>Experiencia</h3>
+              <div class="item der">
+                <h4>Front-end Developer - Proyecto Personal</h4>
+                <span class="casa">Sitio Web Personal</span>
+                <span class="fecha">2023</span>
+                <p>
+                  Desarrollé y diseñé mi propio sitio web personal utilizando
+                  HTML, CSS y JavaScript. El sitio web incluye información sobre
+                  mí, mis habilidades, mi curriculum, mi portafolio y una sección de contacto.
+                  Me encargué de crear un diseño atractivo
+                  y responsivo, optimizando la experiencia del usuario. Utilicé
+                  CSS para estilizar la página y JavaScript para agregar
+                  interactividad y funcionalidad. El proyecto me permitió
+                  aplicar mis conocimientos en desarrollo web y mejorar mis
+                  habilidades en diseño de interfaces y programación front-end.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              <div class="item der">
+                <h4>Front-End Developer - Proyecto Personal</h4>
+                <span class="casa">Medidor de Tamaño de Ventana</span>
+                <span class="fecha">2023</span>
+                <p>
+                  Como parte de mi desarrollo personal y con el objetivo de
+                  facilitar la creación de diseños responsivos, creé una
+                  aplicación web simple que muestra el tamaño de la ventana del
+                  navegador en píxeles. Esta herramienta resultó útil durante mi
+                  participación en el proyecto de Oracle Next Education, ya que
+                  me permitió simular medidas exactas y realizar ajustes
+                  precisos en los diseños responsivos. Utilicé HTML, CSS y
+                  JavaScript para desarrollar la aplicación. En la parte de
+                  HTML, creé una estructura básica para la página y añadí
+                  elementos necesarios para mostrar la información del tamaño de
+                  la ventana. En cuanto a CSS, apliqué estilos para darle un
+                  aspecto agradable y resalté los elementos importantes.
+                  Finalmente, mediante JavaScript, implementé la funcionalidad
+                  que permite obtener el tamaño de la ventana del navegador y
+                  mostrarlo en tiempo real.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              <div class="item der">
+                <h4>Front-end Developer</h4>
+                <span class="casa">Encriptador de Texto</span>
+                <span class="fecha">2023</span>
+                <p>
+                  En el marco del programa Oracle Next Education, participé en
+                  un proyecto donde desarrollé un encriptador de texto
+                  utilizando HTML, CSS y JavaScript. El encriptador cuenta con
+                  la funcionalidad de encriptar y desencriptar textos, brindando
+                  mayor seguridad en la comunicación de información
+                  confidencial. Utilicé HTML para estructurar la página, CSS
+                  para estilizarla y JavaScript para implementar la lógica de
+                  encriptación y desencriptación.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION PORTFOLIO-->
+      <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+          <h2>PORTFOLIO</h2>
+          <div class="galeria">
+            <div class="proyecto">
+              <a href="https://thejose24.github.io/Challenge-ONE/" target="_blank">
+                <img
+                  src="Imagenes/Captura de pantalla 2023-06-22 084410.png"
+                  alt=""
+                />
+                <div class="overlay">
+                  <h3>Challenge Oracle Next Education</h3>
+                  <p>Encriptador de Textos</p>
+                </div>
+              </a>
+            </div>
+            <div class="proyecto">
+              <a
+                href="https://thejose24.github.io/Browser-Window-Size/"
+                target="_blank"
+              >
+                <img src="Imagenes/Proyecto2.png" alt="" />
+                <div class="overlay">
+                  <h3>Personal Proyect</h3>
+                  <p>Rastreador de tamaño de ventana y contenido</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION CONTACTO-->
+      <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+          <h2>CONTACTO</h2>
+          <div class="fila">
+            <!--Formulario-->
+            <div class="col">
+              <input type="text" placeholder="Tu Nombre" />
+              <input type="text" placeholder="Numero Telefono" />
+              <input type="text" placeholder="Direccion de correo" />
+              <input type="text" placeholder="Tema" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button>
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
-            </button>
-        </div>
-    </section>
-
-    <!--SECCION SKILLS-->
-    <section id="skills" class="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!--Technical Skills-->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>JavaScript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML5 & CSS3</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>87%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>53%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Git & GitHub</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>83%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Professional Skills-->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>97%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>88%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </button>
             </div>
-        </div>
-    </section>
-
-    <!--SECCION CURRICULUM-->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educacion</h3>
-                    <div class="item izq">
-                        <h4>Programador Junior</h4>
-                        <span class="casa">Oracle Next Education</span>
-                        <span class="fecha">2023 - Actualidad</span>
-                        <p>Oracle Next Education (ONE) es un programa educativo de Oracle que ofrece becas de formación en tecnología en América Latina. A través de ONE, adquirí habilidades en programación, incluyendo Java, bases de datos e inteligencia artificial. Esta experiencia me permitió desarrollar una base sólida en tecnología y estar preparado para los desafíos del mundo digital en constante evolución</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Ingenieria de Sistemas e Informatica</h4>
-                        <span class="casa">Universidad Tecnologica del Peru</span>
-                        <span class="fecha">2022 - Actualidad</span>
-                        <p>Durante mi carrera universitaria, he adquirido sólidos conocimientos en áreas fundamentales de la tecnología. Mi formación incluye cursos especializados en programación, desarrollo de software, desarrollo web, desarrolo movil, bases de datos, redes y seguridad informática. Además, he tenido la oportunidad de participar en proyectos prácticos que me han permitido aplicar mis conocimientos y desarrollar habilidades en resolución de problemas, trabajo en equipo y análisis de sistemas.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia</h3>
-                    <div class="item der">
-                        <h4>Front-end Developer - Proyecto Personal</h4>
-                        <span class="casa">Sitio Web Personal</span>
-                        <span class="fecha">2023</span>
-                        <p>Desarrollé y diseñé mi propio sitio web personal utilizando HTML, CSS y JavaScript. El sitio web incluye información sobre mí, mi portafolio, mis habilidades, mi experiencia y una sección de contacto. Me encargué de crear un diseño atractivo y responsivo, optimizando la experiencia del usuario. Utilicé CSS para estilizar la página y JavaScript para agregar interactividad y funcionalidad. El proyecto me permitió aplicar mis conocimientos en desarrollo web y mejorar mis habilidades en diseño de interfaces y programación front-end.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front-End Developer - Proyecto Personal</h4>
-                        <span class="casa">Medidor de Tamaño de Ventana</span>
-                        <span class="fecha">2023</span>
-                        <p>Como parte de mi desarrollo personal y con el objetivo de facilitar la creación de diseños responsivos, creé una aplicación web simple que muestra el tamaño de la ventana del navegador en píxeles. Esta herramienta resultó útil durante mi participación en el proyecto de Oracle Next Education, ya que me permitió simular medidas exactas y realizar ajustes precisos en los diseños responsivos. Utilicé HTML, CSS y JavaScript para desarrollar la aplicación. En la parte de HTML, creé una estructura básica para la página y añadí elementos necesarios para mostrar la información del tamaño de la ventana. En cuanto a CSS, apliqué estilos para darle un aspecto agradable y resalté los elementos importantes. Finalmente, mediante JavaScript, implementé la funcionalidad que permite obtener el tamaño de la ventana del navegador y mostrarlo en tiempo real.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front-end Developer</h4>
-                        <span class="casa">Encriptador de Texto</span>
-                        <span class="fecha">2023</span>
-                        <p>En el marco del programa Oracle Next Education, participé en un proyecto donde desarrollé un encriptador de texto utilizando HTML, CSS y JavaScript. El encriptador cuenta con la funcionalidad de encriptar y desencriptar textos, brindando mayor seguridad en la comunicación de información confidencial. Utilicé HTML para estructurar la página, CSS para estilizarla y JavaScript para implementar la lógica de encriptación y desencriptación.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
+            <!--Mapa-->
+            <div class="col">
+              <img src="Imagenes/ubicacion.png" alt="" />
+              <div class="info">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    131 Montero Rosas, Comas - Peru
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +51 950 532 495
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    joseenrique123438@gmail.com
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!--SECCION PORTFOLIO-->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://thejose24.github.io/Challenge-ONE/">
-                        <img src="Imagenes/Captura de pantalla 2023-06-22 084410.png" alt="">
-                        <div class="overlay">
-                            <h3>Challenge Oracle Next Education</h3>
-                            <p>Encriptador de Textos</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://thejose24.github.io/Browser-Window-Size/"      target="_blank">
-                        <img src="Imagenes/Proyecto2.png" alt="">
-                        <div class="overlay">
-                            <h3>Personal Proyect</h3>
-                            <p>Rastreador de tamaño de ventana y contenido</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--SECCION CONTACTO-->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!--Formulario-->
-                <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Numero Telefono">
-                    <input type="text" placeholder="Direccion de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!--Mapa-->
-                <div class="col">
-                    <img src="Imagenes/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                 131 Montero Rosas, Comas - Peru
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                 +51 950 532 495
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                 joseenrique123438@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
     </main>
 
     <!--FOOTER-->
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up fa-bounce"></i>
-        </a>
-        <div class="herramientas">
-            <p>ESTE SITIO ESTA DESARROLLADO CON:</p>
-            <a href="#"><i class="fa-brands fa-html5" style="color: #E34F26;"></i></a>
-            <a href="#"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i></a>
-            <a href="#"><i class="fa-brands fa-square-js" style="color: #f7df1e;"></i></a>
-        </div>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up fa-bounce"></i>
+      </a>
+      <div class="herramientas">
+        <p>ESTE SITIO WEB FUE DESARROLLADO CON:</p>
+        <a href="#"
+          ><i class="fa-brands fa-html5" style="color: #e34f26"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-css3-alt" style="color: #1572b6"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-square-js" style="color: #f7df1e"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

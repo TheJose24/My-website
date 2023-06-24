@@ -619,6 +619,7 @@ html{
     background-color: #252a2e;
     color: #fff;
     font-size: 18px;
+    resize: none;
 }
 
 .contacto button{
