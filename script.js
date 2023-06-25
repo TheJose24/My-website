@@ -1,3 +1,13 @@
+//Preloader
+document.addEventListener("DOMContentLoaded", function() {
+    var loaderContainer = document.getElementById("loader");
+    
+    setTimeout(function() {
+        loaderContainer.classList.add("loader2");
+    }, 3000);
+  });
+//fin
+
 let menuVisible = false;
 
 //Funcion que oculta o muesta el menu
