@@ -1033,6 +1033,10 @@ footer .arriba{
 }
 
 @media screen and (max-width:700px){
+    .ui-abstergo {
+        --size: 1.5;
+    }
+
     .sobremi .fila{
         display: block;
     }
@@ -1105,9 +1109,6 @@ footer .arriba{
 }
 
 @media screen and (max-width:400px){
-    .ui-abstergo {
-        --size: 1.5;
-    }
 
     .sobremi .fila .col ul #tamaño1 > strong{
         width: 150px;
