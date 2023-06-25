@@ -279,6 +279,7 @@ html{
     z-index: 1000;
     clip-path: circle(150% at 100% 0);
     transition: clip-path 1s ease-in-out;
+    overflow: hidden;
   }
 
   .loader2{

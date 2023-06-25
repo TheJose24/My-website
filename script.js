@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     setTimeout(function() {
         loaderContainer.classList.add("loader2");
+        document.body.style.overflow = "auto";
     }, 3000);
-  });
+  
+    document.body.style.overflow = "hidden";
+});
 //fin
 
 let menuVisible = false;
