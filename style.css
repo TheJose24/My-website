@@ -314,6 +314,10 @@ html{
     list-style: none;
 }
 
+.contenedor-header header ul li{
+    display: inline-flex;
+}
+
 .contenedor-header header nav ul li a{
     text-align: none;
     color: #fff;
@@ -323,8 +327,23 @@ html{
     text-decoration: none;
 }
 
-.contenedor-header header nav ul a:hover{
-    color: #1cb698;
+.contenedor-header header nav ul li a::before{
+    margin-left: auto;
+}
+
+.contenedor-header header nav ul li a::after,
+.contenedor-header header nav ul li a::before{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #1cb698;
+  display: block;
+  transition: 0.5s;
+}
+
+.contenedor-header header nav ul a:hover::after,
+.contenedor-header header nav ul a:hover::before{
+    width: 100%;
 }
 
 .nav-responsive{
@@ -335,6 +354,11 @@ html{
     cursor: pointer;
     display: none;
 }
+
+nav a.active {
+    border-radius: 10% 25%;
+    background-color: #1cb698; /* Establecer el color de fondo para la sección activa */
+  }
 
 /*SECCION INICIO*/
 .inicio{
@@ -1002,9 +1026,40 @@ footer .arriba{
 
 /*DISEÑO RESPONSIVE*/
 @media screen and (max-width:980px){
+    .no-scroll{
+        overflow: hidden!important;
+    }
+
     nav{
         display: none;
     }
+
+    #nav{
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    #nav.responsive {
+        transform: translateX(0%);
+        animation: mostrarNav 0.3s ease-in-out;
+      }
+      
+      @keyframes mostrarNav {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      @keyframes ocultarNav {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
 
     .nav-responsive{
         display: block;
@@ -1014,17 +1069,22 @@ footer .arriba{
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
-        background-color: #252a2e;
-        width: 180px;
+        top: 70px;
+        background-color: rgba(30, 35, 38, 0.8);;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(7px);
     }
 
     nav.responsive ul{
-        display: block !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        justify-content: space-around;
     }
 
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 
