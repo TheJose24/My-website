@@ -48,7 +48,7 @@ function seleccionar(){
 /*===============================FIN MENU====================================*/
 
 
-/*===============================EFECTO ANIMACION===============================
+/*===============================ANIMACION SKILLS===============================
 Esta función activa un efecto visual en la sección de habilidades de la página
 web cuando se desplaza hacia ella*/
 
@@ -127,7 +127,7 @@ window.onscroll = function(){
  antes de enviar el formulario. Cuando el usuario hace clic en el botón de envío, se deshabilita
  temporalmente para evitar envíos duplicados y se agrega un retraso antes de enviar el formulario.*/
  
-document.querySelector('form[name="formulario-contacto"]').addEventListener("submit", function(event) {
+/*document.querySelector('form[name="formulario-contacto"]').addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que se envíe el formulario de inmediato
     
     document.getElementById("submitButton").disabled = true; // Deshabilita el botón de envío
@@ -137,4 +137,4 @@ document.querySelector('form[name="formulario-contacto"]').addEventListener("sub
       event.target.submit(); // Envía el formulario después del retraso
     }, 3000);
   });
-  //=====================================FIN FORMULARIO==================================================
+  //=====================================FIN FORMULARIO==================================================*/

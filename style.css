@@ -518,9 +518,13 @@ nav a.active {
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
     position: relative;
     z-index: 10;
+}
+
+.sobremi button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .sobremi button .overlay{
@@ -1080,7 +1084,7 @@ footer .arriba{
         display: flex !important;
         flex-direction: column;
         align-items: center;
-        height: 90vh;
+        height: 80vh;
         justify-content: space-around;
     }
 
