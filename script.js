@@ -60,11 +60,15 @@ function efectoSkills(){
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("htmlcss");
         habilidades[2].classList.add("java");
-        habilidades[3].classList.add("gitgithub");
-        habilidades[4].classList.add("comunicacion");
-        habilidades[5].classList.add("trabajo");
-        habilidades[6].classList.add("creatividad");
-        habilidades[7].classList.add("dedicacion");
+        habilidades[3].classList.add("mysql");
+        habilidades[4].classList.add("python");
+        habilidades[5].classList.add("gitgithub");
+        habilidades[6].classList.add("comunicacion");
+        habilidades[7].classList.add("trabajo");
+        habilidades[8].classList.add("aprendizaje");
+        habilidades[9].classList.add("responsabilidad");
+        habilidades[10].classList.add("creatividad");
+        habilidades[11].classList.add("dedicacion");
     }
 }
 //=============================FIN ANIMACION======================================

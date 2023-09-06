@@ -637,7 +637,25 @@ nav a.active {
 }
 @keyframes java{
     0%{width: 0%;}
-    100%{width: 53%;}
+    100%{width: 63%;}
+}
+
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 54%;}
 }
 
 .skills .skill .gitgithub{
@@ -668,13 +686,31 @@ nav a.active {
     100%{width: 90%;}
 }
 
+.skills .skill .aprendizaje{
+    width: 0%;
+    animation: 2s aprendizaje forwards;
+}
+@keyframes aprendizaje{
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+@keyframes responsabilidad{
+    0%{width: 0%;}
+    100%{width: 92%;}
+}
+
 .skills .skill .creatividad{
     width: 0%;
     animation: 2s creatividad forwards;
 }
 @keyframes creatividad{
     0%{width: 0%;}
-    100%{width: 97%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .dedicacion{
