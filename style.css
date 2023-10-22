@@ -6,6 +6,24 @@
     padding: 0;
 }
 
+/* Estilos para la barra de desplazamiento en todo el documento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e2326; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1cb698; /* Color de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de los bordes de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #116c5a; /* Color de la barra de desplazamiento al pasar el mouse */
+  }
+
 html{
     /*Permite deslizar cuando se hace click en los links del menu*/
     scroll-behavior: smooth;
@@ -519,7 +537,6 @@ nav a.active {
     padding: 10px 22px;
     font-size: 16px;
     position: relative;
-    z-index: 10;
 }
 
 .sobremi button a{
@@ -637,7 +654,7 @@ nav a.active {
 }
 @keyframes java{
     0%{width: 0%;}
-    100%{width: 63%;}
+    100%{width: 73%;}
 }
 
 .skills .skill .mysql{
@@ -811,7 +828,6 @@ nav a.active {
     position: absolute;
     top: 50%;
     right: -47px;
-    z-index: 5;
 }
 
 .curriculum .fila .item .conectori .circuloi{
@@ -832,7 +848,6 @@ nav a.active {
     position: absolute;
     top: 50%;
     left: -47px;
-    z-index: 5;
 }
 
 .curriculum .fila .item .conectord .circulod{
@@ -1064,6 +1079,265 @@ footer .arriba{
     font-size: 18px;
 }
 
+/*==================================== Chat Bot ===================================*/
+/* Estilos para la barra de desplazamiento en navegadores */
+.containerWhat::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .containerWhat::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  .containerWhat::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de los bordes de la barra de desplazamiento */
+  }
+  
+  .containerWhat::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de la barra de desplazamiento al pasar el mouse */
+  }
+
+/* Estilos general de los contenedores principales */
+.container{
+    position: fixed;
+    display: none;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    width: 300px;
+    height: 460px;
+}
+
+.container .whatsapp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.icono{
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 95%;
+    top: 95%;
+    transform: translate(-70%, -90%);
+    width: 70px;
+    height: 70px;
+    background-color: #1cb698;
+    border-radius: 40px 40px 40px 15px;
+}
+
+.icono .img{
+    width: 50px;
+}
+
+.whatsapp .chat{
+    display: block;
+    position: fixed;
+    opacity: 0;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #c7c7c5;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Estilos del encabezado */
+.headerWhat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding: 0 10px;
+    background-color: #1cb698;
+    border-radius: 10px 10px 0 0;
+}
+
+.headUser{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.headUser .imgUser{
+    width: 24px;
+}
+
+.userImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(201, 201, 201);
+    border: 1px solid #525252;
+}
+
+.headLogo{
+    margin: 0 20px;
+    font-size: 23px;
+    color: white;
+}
+
+.cerrar{
+    margin-right: 15px;
+}
+
+.cerrar i{
+    color: rgb(65, 65, 65);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Estilos del campo donde se muestran los mensajes */
+.containerWhat{
+    width: 100%;
+    height: 78%;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 15px;
+}
+
+/* estilo de las cajas de mensaje general*/
+.containerMensaje{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+}
+
+.containerMensaje.usuario{
+    justify-content: flex-end;
+}
+
+/* Imagen de mensaje asistente */
+.imagen{
+    margin-right: 5px;
+    padding: 3px;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Imagen de mensaje usuario */
+.imagen.imgUsuario{
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.imagen .imgMensaje{
+    width: 20px;
+}
+
+/* mensaje */
+.mensaje{
+    max-width: 75%;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.mensaje.msgUsuario{
+    background-color: #1cb698;
+    border-radius: 10px 10px 0px 10px;
+    color: white;
+}
+
+
+/* Estilos para los mensajes
+.mensaje {
+    margin: 5px 5px; /* Margen superior e inferior para separar los mensajes
+    border-radius: 10px 0 10px 10px;
+    clear: both; /* Limpiar flotación para evitar superposiciones
+  }
+  
+  /* Estilos para los mensajes del usuario
+  .mensaje.usuario {
+    background-color: #007bff; /* Color de fondo para los mensajes del usuario
+    color: #fff; /* Color del texto para los mensajes del usuari
+    float: right; /* Alinear los mensajes del usuario a la derecha
+  }
+  
+  /* Estilos para los mensajes del asistente
+  .mensaje.asistente {
+    background-color: #28a745; /* Color de fondo para los mensajes del asistente
+    color: #fff; /* Color del texto para los mensajes del asistente
+    float: left; /* Alinear los mensajes del asistente a la izquierda
+  }
+*/
+
+.textWhat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12%;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+}
+
+.formularioMensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.cajaTexto{
+    display: flex;
+    /* height: 1.875rem; */
+    width: 90%;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10px;
+}
+
+#cajaTexto{
+    padding: 10px;
+    width: 100%;
+    height: 36px;
+    resize: none;
+    max-height: 180px;
+    border-radius: 5px;
+    border: 0px solid;
+    border: none;
+    outline: none;
+}
+
+.btnEnviar{
+    align-self: flex-end;
+    cursor: pointer;
+    width: 10%;
+    height: 35px;
+    line-height: 40px;
+    visibility: visible;
+}
+
+.btnEnviar i{
+    font-size: 24px;
+    opacity: 0.8;
+    color: rgb(65, 65, 65);
+}
+
+.btnEnviar i:hover{
+    opacity: 1;
+}
+
+
+
+
 /*DISEÑO RESPONSIVE*/
 @media screen and (max-width:980px){
     .no-scroll{
@@ -1207,9 +1481,51 @@ footer .arriba{
     .contacto .col .info{
         top: 50%;
     }
+    .container{
+        z-index: 100;
+        position: fixed;
+        left: none;
+        top: none;
+        width: 100vw;
+        height: 100vh;
+        transform: none;
+    }
+
+    .whatsapp .chat{       
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .icono{
+        top: 95%;
+        left: 92%;
+    }
+
+    .cajaTexto{
+        bottom: 20px;
+    }
+
+    #cajaTexto{
+        font-size: 15px;
+        height: 38px;
+    }
+
+    .cerrar i {
+        font-size: 22px;
+    }
+
+    .btnEnviar i {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:400px){
+
+    
 
     .sobremi .fila .col ul #tamaño1 > strong{
         width: 150px;
